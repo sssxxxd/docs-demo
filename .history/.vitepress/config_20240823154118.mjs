@@ -29,7 +29,7 @@ export default defineConfig({
       "/product/specification": set_sidebar("product/specification") 
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/sssxxxd/docs-demo' }
+      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
   }
 })

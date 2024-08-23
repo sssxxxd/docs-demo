@@ -1,5 +1,5 @@
-import { defineConfig } from 'vitepress';
-import { set_sidebar } from './utils/auto_sidebar.mjs';	// 改成自己的路径
+import { defineConfig } from 'vitepress'
+import { set_sidebar } from "./utils/auto_sidebar.mjs";	// 改成自己的路径
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/docs-demo/",
@@ -29,7 +29,7 @@ export default defineConfig({
       "/product/specification": set_sidebar("product/specification") 
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/sssxxxd/docs-demo' }
+      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
   }
 })

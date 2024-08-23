@@ -1,5 +1,5 @@
-import { defineConfig } from 'vitepress';
-import { set_sidebar } from './utils/auto_sidebar.mjs';	// 改成自己的路径
+import { defineConfig } from 'vitepress'
+import { set_sidebar } from "./utils/auto_sidebar.mjs";	// 改成自己的路径
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/docs-demo/",
@@ -12,7 +12,7 @@ export default defineConfig({
       { text: '前端开发规范', link: '/front-end/specification' },
       { text: '后端开发规范', link: '/backend/specification' },
       { text: '产品开发规范', link: '/product/specification' },
-    ], 
+    ],
 
     // sidebar: [
     //   {
@@ -24,12 +24,12 @@ export default defineConfig({
     //   }
     // ],
     sidebar: { 
-      "/front-end/specification": set_sidebar("/front-end/specification") ,
+      "/front-end/specification": set_sidebar("front-end/specification") ,
       "/backend/specification": set_sidebar("front-end/specification") ,
-      "/product/specification": set_sidebar("product/specification") 
+      "/product/specification": set_sidebar("product/specification") ,
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/sssxxxd/docs-demo' }
+      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
   }
 })
